@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escuchar Eventos</title>
+</head>
+<style>
+  form {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid orange;
+    width: max-content;
+  }
+
+  input, textarea {
+    width: max-content;
+  }
+
+  textarea {
+    resize: none;
+  }
+</style>
+<body>
+  <h1>Escuchando Eventos JS</h1>
+  <p>Normalmente escucharemos eventos en respuesta a una interacción del usuario, como el click en un botón, envío de formularios y otros.</p>
+
+  <form action="">
+    <h3>Formulario</h3>
+    <input type="text" placeholder="username">
+    <input type="email" placeholder="email">
+    <textarea cols="30" rows="10" placeholder="Message" class="message-area"></textarea>
+    <input type="submit" value="Enviar datos">
+  </form>
+
+  <script src="./02-EscucharEventos.js"></script>
+</body>
+</html>
