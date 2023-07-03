@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browser Object Model</title>
+  </head>
+  <style>
+    .obj {
+      color: crimson;
+    }
+
+    div {
+      border: 2px solid orange;
+      margin: 20px 0;
+      padding: 15px;
+    }
+
+    #time {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+    }
+
+    #time button {
+      width: max-content;
+    }
+  </style>
+  <body>
+    <h1>Browser Object Model</h1>
+    <div>
+      <button id="showWidth">Mostrar ancho de página</button>
+      <button id="showHeight">Mostrar alto de página</button>
+      <button id="showFullWidth">Mostrar ancho del navegador</button>
+      <button id="showFullHeight">Mostrar alto del navegador</button>
+    </div>
+
+    <div>
+      <button id="openNewWindow">Open new Window</button>
+      <button id="closeThisWindow">Close this window</button>
+      <button id="moveTo">Move to any position in this window</button>
+      <button id="resizeTo">Resize this window</button>
+    </div>
+
+    <div>
+      <button id="getScreenWidth">Get Screen Width</button>
+      <button id="getScreenHeight">Get Screen Height</button>
+      <button id="getAvailScreenWidth">Get Available Screen Width</button>
+      <button id="getAvailScreenHeight">Get Available Screen Height</button>
+      <button id="getColorDepth">Get Color Depth</button>
+      <button id="getPixelDepth">Get Pixel Depth</button>
+      <button id="getWindowScreen" class="obj">Get Window Screen Object</button>
+    </div>
+
+    <div>
+      <button id="getCurrentUrl">Get Current URL</button>
+      <button id="getHostname">Get Host name</button>
+      <button id="getPathname">Get Path name</button>
+      <button id="getProtocol">Get Protocol</button>
+      <button id="getPort">Get Port</button>
+      <button id="loadNewDocument">Load New Document</button>
+      <button id="getFullLocation" class="obj">Get Full Location Object</button>
+    </div>
+
+    <div>
+      <button id="goToPreviousURL">Go to previous URL</button>
+      <button id="goToNextURL">Go to next URL</button>
+      <button id="getFullHistory" class="obj">get Full History Object</button>
+    </div>
+
+    <div>
+      <button id="getCookieEnabled">Know if Cookies is Enabled</button>
+      <button id="getUserAgent">Get User Agent</button>
+      <button id="getLanguage">Get Language navigator</button>
+      <button id="getIsOnline">Know if Browser is Online</button>
+      <button id="getFullNavigation" class="obj">
+        Get Full Navigation Object
+      </button>
+    </div>
+
+    <div>
+      <button id="getAlert">Get Alert</button>
+      <button id="getConfirm">Get Confirm</button>
+      <button id="getPrompt">Get Prompt</button>
+    </div>
+
+    <div>
+      <button id="trySetTimeout">Try setTimeout</button>
+      <button id="trySetInterval">Try setInterval</button>
+      <div id="time"></div>
+    </div>
+
+    <script src="./Bom.js"></script>
+  </body>
+</html>
