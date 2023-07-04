@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Forms API</title>
+  </head>
+  <body>
+    <form id="checkValidity">
+      <h3>Check Validity</h3>
+      <input type="text" required placeholder="username"/>
+      <input type="email" required placeholder="email"/>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <form id="setCustomValidity">
+      <h3>Set Custom Validity</h3>
+      <input type="password" id="pass1" required placeholder="password">
+      <input type="password" id="pass2" required placeholder="confirm password">
+      <button type="submit">Enviar</button>
+    </form>
+
+    <form>
+      <h3>Validity [valid, valueMissing, typeMismatch]</h3>
+      <input type="email" id="emailInput" required>
+      <button id="validity">Validar</button>
+    </form>
+
+    <form>
+      <h3>Range Overflow</h3>
+      <input id="input-Overflow" type="number" max="100">
+      <button id="rangeOverflow">OK</button>
+    </form>
+
+    <form>
+      <h3>Range Underflow</h3>
+      <input id="input-Underflow" type="number" min="100">
+      <button id="rangeUnderflow">OK</button>
+    </form>
+
+    <script src="./Forms.js"></script>
+  </body>
+</html>

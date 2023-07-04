@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Storage API</title>
+  </head>
+  <body>
+    <form>
+      <input type="text" required placeholder="username">
+      <input type="password" required placeholder="password">
+      <input type="submit" value="Enviar">
+    </form>
+
+    <h3>Lista de usuarios:</h3>
+    <ul id="users"></ul>
+
+    <div>
+      <h3>Remover Local Storage</h3>
+      <button id="removeStorage">Delete all storage</button>
+    </div>
+
+    <div>
+      <h3>Obtener la cantidad de datos almacenados</h3>
+      <button id="getLength">Get length of Local Storage</button>
+    </div>
+
+    <div>
+      <h3>Obtener una key específico según su posición</h3>
+      <input type="number" min="0" placeholder="key">
+      <button id="getKey">Buscar</button>
+    </div>
+
+    <div>
+      <h3>Obtener el objeto Local Storage</h3>
+      <button id="getLocalStorage">Get Local Storage Object</button>
+    </div>
+
+    <div>
+      <h3>Obtener el objeto Session Storage</h3>
+      <button id="getSessionStorage">Get Session Storage Object</button>
+    </div>
+
+    <hr><hr>
+
+    <div>
+      <h3>Agregar Nuevos items al Storage:</h3>
+      <input type="text" placeholder="key name"> <br>
+      <input type="text" placeholder="value"> <br>
+      <button id="add">Agregar al Storage</button>
+    </div>
+
+    <div>
+      <h3>Eliminar items según su nombre de key</h3>
+      <input type="text" placeholder="nombre de la key">
+      <button id="delete">Eliminar item</button>
+    </div>
+
+    <script src="./Storage.js"></script>
+  </body>
+</html>
