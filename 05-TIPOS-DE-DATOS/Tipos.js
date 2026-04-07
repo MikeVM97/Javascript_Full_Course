@@ -29,13 +29,13 @@ console.log(Array.isArray(numbers)); // Output: true
 
 // 6. Function(Función)
 const x = function () {
-  console.log('Hello');
-}
+  console.log("Hello");
+};
 console.log(typeof x); // Output: function
 
 const myFunction = () => {
-  console.log('Morning!');
-}
+  console.log("Morning!");
+};
 console.log(typeof myFunction); // Output: function
 
 // 7. Null
@@ -61,14 +61,6 @@ console.log(typeof bigNumber); // Output: "bigint"
 const anotherBigNumber = 123456789n;
 console.log(typeof anotherBigNumber); // Output: "bigint"
 
-
-
-
-
-
-
-
-
 /* CONCLUSIONES */
 
 /* DATOS PRIMITIVOS DE JAVASCRIPT */
@@ -85,7 +77,6 @@ JavaScript define 7 tipos de tipos de datos primitivos: */
 /* A su vez, este tipo de dato puede ser una de las siguiente estructura de datos: 
 un Objeto, un Array, un Map, un Set, null, etc */
 /* Aunque null no es una estructura de dato, si es un objeto de Javascript, typeof null = object */
-
 
 /* EXISTEN 6 ESTRUCTURAS DE DATOS EN JAVASCRIPT: */
 /* Array, Object, Map, Set, Queue, Stack */
